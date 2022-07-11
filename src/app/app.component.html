@@ -1,0 +1,13 @@
+<form #userlogin = "ngForm" (ngSubmit) = "onSubmit(userlogin.value)" >
+
+  <input type="text" class="form-control" id="middleName"
+       required
+       [(ngModel)]="middleName" name="middleName">
+
+  <input type="text" class="form-control" id="lastName"
+       required
+       [(ngModel)]="lastName" name="lastName">
+
+  <<button type="submit">Submit</button>
+
+</form >
